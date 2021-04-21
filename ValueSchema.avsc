@@ -1,0 +1,27 @@
+{
+  "namespace": "example.avro",
+  "type": "record",
+  "name": "User",
+  "fields": [
+    {
+      "name": "id_str",
+      "type": "string"
+    },
+    {
+      "name": "created_at",
+      "type": "string"
+    },
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "screen_name",
+      "type": "string"
+    },
+    {
+      "name": "text",
+      "type": "string"
+    }
+  ]
+}

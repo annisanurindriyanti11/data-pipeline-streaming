@@ -1,0 +1,31 @@
+1. Post:http://172.26.14.10:8083/connectors
+
+Body:{
+    "name": "kafka_sink_to_elastic",
+    "config": { 
+        "topics": "sbd4",
+        "connector.class": "io.confluent.connect.elasticsearch.ElasticsearchSinkConnector",
+        "connection.url": "http://172.26.14.10:9200",
+        "key.ignore": "true",
+        "schema.ignore": "true",
+        "type.name": "_doc",
+        "topic.index.map": "sbd4:sbd4"
+    }
+}
+File :Json
+
+2. Get: http://172.26.14.10:8083/kafka_to_elastic1/status
+
+Body:{
+    "name": "kafka_sink_to_elastic",
+    "config": { 
+        "topics": "sbd4",
+        "connector.class": "io.confluent.connect.elasticsearch.ElasticsearchSinkConnector",
+        "connection.url": "http://172.26.14.10:9200",
+        "key.ignore": "true",
+        "schema.ignore": "true",
+        "type.name": "_doc",
+        "topic.index.map": "sbd4:sbd4"
+    }
+}
+File :Json
